@@ -1,0 +1,34 @@
+config.minebackroomscore.general=Minebackrooms Core Config
+config.minebackroomscore.teleporter=Teleporter
+config.minebackroomscore.teleporter.tooltip=These settings are used to implement secure noclipping.
+config.minebackroomscore.teleporter.retryCount=Retry count
+config.minebackroomscore.teleporter.retryCount.tooltip=The number of retries when searching for a safe place during noclip.
+config.minebackroomscore.teleporter.radius=Radius
+config.minebackroomscore.teleporter.radius.tooltip=The search radius for safe places during noclip.
+config.minebackroomscore.fluidDetect.offset.west=Fluid detect: west offset
+config.minebackroomscore.fluidDetect.offset.west.tooltip=Detect fluid within a fixed distance west of the player.
+config.minebackroomscore.fluidDetect.offset.east=Fluid detect: east offset
+config.minebackroomscore.fluidDetect.offset.east.tooltip=Detect fluid within a fixed distance east of the player.
+config.minebackroomscore.fluidDetect.offset.north=Fluid detect: north offset
+config.minebackroomscore.fluidDetect.offset.north.tooltip=Detect fluid within a fixed distance north of the player.
+config.minebackroomscore.fluidDetect.offset.south=Fluid detect: south offset
+config.minebackroomscore.fluidDetect.offset.south.tooltip=Detect fluid within a fixed distance south of the player.
+config.minebackroomscore.fluidDetect.offset.below=Fluid detect: below offset
+config.minebackroomscore.fluidDetect.offset.below.tooltip=Detect fluid within a fixed distance below of the player.
+config.minebackroomscore.fluidDetect.offset.above=Fluid detect: above offset
+config.minebackroomscore.fluidDetect.offset.above.tooltip=Detect fluid within a fixed distance above of the player.
+config.minebackroomscore.feature=Feature (WorldGen)
+config.minebackroomscore.feature.tooltip=Regarding the configuration of generating certain blocks
+config.minebackroomscore.feature.noclipableStone.genProbability=The probability of generating Noclipable Stone
+config.minebackroomscore.feature.noclipableStone.genProbability.tooltip=Set it to 0 to prevent generation.
+config.minebackroomscore.feature.noclipableStone.genSize=The size of generating Noclipable Stone
+config.minebackroomscore.feature.noclipableStone.minY=The minimum height for generating Noclipable Stone
+config.minebackroomscore.feature.noclipableStone.maxY=The maximum height for generating Noclipable Stone
+
+gui.minebackroomscore.guiConfig.FirstLine=MineBackrooms Core Config
+gui.minebackroomscore.guiConfig.SecondLine=Core
+
+itemGroup.minebackroomscoreNoclipable=MineBackrooms Core | Noclipable
+
+tile.minebackroomscore.noclipableDirt.name=Noclipable Dirt
+tile.minebackroomscore.noclipableStone.name=Noclipable Stone

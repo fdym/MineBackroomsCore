@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [{
+      "model": "minebackroomscore:noclipable_stone"
+    }],
+    "inventory": [{
+      "model": "minebackroomscore:noclipable_stone"
+    }]
+  }
+}

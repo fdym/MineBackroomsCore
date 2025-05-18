@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "minebackroomscore",
+    "name": "MineBackrooms Core",
+    "description": "The common parts between MineBackrooms Fandom Edition and MineBackrooms Wikidot Edition are in this mod.",
+    "version": "12.0.1.a0",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["fdym"],
+    "credits": "Fdym and Backrooms community.",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

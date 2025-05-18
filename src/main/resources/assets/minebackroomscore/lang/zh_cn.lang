@@ -1,0 +1,34 @@
+config.minebackroomscore.general=Minebackrooms Core配置
+config.minebackroomscore.teleporter=Teleporter
+config.minebackroomscore.teleporter.tooltip=这些设置用于实现安全切行。
+config.minebackroomscore.teleporter.retryCount=重试次数
+config.minebackroomscore.teleporter.retryCount.tooltip=切行时搜索安全位置的重试次数。
+config.minebackroomscore.teleporter.radius=半径
+config.minebackroomscore.teleporter.radius.tooltip=切行时搜索安全位置的半径。
+config.minebackroomscore.fluidDetect.offset.west=流体检测: 西偏移值
+config.minebackroomscore.fluidDetect.offset.west.tooltip=检测玩家以西固定距离内的流体。
+config.minebackroomscore.fluidDetect.offset.east=流体检测: 东偏移值
+config.minebackroomscore.fluidDetect.offset.east.tooltip=检测玩家以东固定距离内的流体。
+config.minebackroomscore.fluidDetect.offset.north=流体检测: 北偏移值
+config.minebackroomscore.fluidDetect.offset.north.tooltip=检测玩家以北固定距离内的流体。
+config.minebackroomscore.fluidDetect.offset.south=流体检测: 南偏移值
+config.minebackroomscore.fluidDetect.offset.south.tooltip=检测玩家以南固定距离内的流体。
+config.minebackroomscore.fluidDetect.offset.below=流体检测: 下偏移值
+config.minebackroomscore.fluidDetect.offset.below.tooltip=检测玩家下方固定距离内的流体。
+config.minebackroomscore.fluidDetect.offset.above=流体检测: 上偏移值
+config.minebackroomscore.fluidDetect.offset.above.tooltip=检测玩家上方固定距离内的流体。
+config.minebackroomscore.feature=Feature (世界生成)
+config.minebackroomscore.feature.tooltip=关于某些方块生成的配置。
+config.minebackroomscore.feature.noclipableStone.genProbability=可切行石头的生成概率
+config.minebackroomscore.feature.noclipableStone.genProbability.tooltip=将其设为0以阻止生成。
+config.minebackroomscore.feature.noclipableStone.genSize=可切行石头生成时的大小
+config.minebackroomscore.feature.noclipableStone.minY=可切行石头的最小生成高度
+config.minebackroomscore.feature.noclipableStone.maxY=可切行石头的最大生成高度
+
+gui.minebackroomscore.guiConfig.FirstLine=MineBackrooms Core 配置
+gui.minebackroomscore.guiConfig.SecondLine=Core
+
+itemGroup.minebackroomscoreNoclipable=MineBackrooms Core | 可切行方块
+
+tile.minebackroomscore.noclipableDirt.name=可切行泥土
+tile.minebackroomscore.noclipableStone.name=可切行石头
