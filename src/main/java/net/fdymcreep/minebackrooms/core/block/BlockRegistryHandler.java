@@ -15,11 +15,18 @@ public class BlockRegistryHandler {
     public static final NoclipableDirt NOCLIPABLE_DIRT = new NoclipableDirt(Material.GROUND, MapColor.DIRT);
     public static final NoclipableStone NOCLIPABLE_STONE = new NoclipableStone(Material.ROCK, MapColor.STONE);
 
+    public static final Level0Bricks LEVEL0_BRICKS = new Level0Bricks(Material.ROCK, MapColor.YELLOW);
+    public static final Level0Light LEVEL0_LIGHT = new Level0Light(Material.ROCK, MapColor.YELLOW);
+
     @SubscribeEvent
     public static void onRegistry(RegistryEvent.Register<Block> event) {
         IForgeRegistry<Block> registry = event.getRegistry();
+
         registry.register(NOCLIPABLE_ICON);
         registry.register(NOCLIPABLE_DIRT);
         registry.register(NOCLIPABLE_STONE);
+
+        registry.register(LEVEL0_BRICKS);
+        registry.register(LEVEL0_LIGHT);
     }
 }

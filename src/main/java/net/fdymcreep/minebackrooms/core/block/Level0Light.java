@@ -1,29 +1,30 @@
 package net.fdymcreep.minebackrooms.core.block;
 
 import net.fdymcreep.minebackrooms.core.MineBackroomsCore;
+import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.SoundEvents;
 
-public class NoclipableStone extends NoclipableBlock{
-    public NoclipableStone(Material p_i45394_1_) {
-        super(p_i45394_1_);
-        init();
-    }
-
-    public NoclipableStone(Material p_i46399_1_, MapColor p_i46399_2_) {
+public class Level0Light extends Block {
+    public Level0Light(Material p_i46399_1_, MapColor p_i46399_2_) {
         super(p_i46399_1_, p_i46399_2_);
         init();
     }
 
+    public Level0Light(Material p_i45394_1_) {
+        super(p_i45394_1_);
+        init();
+    }
+
     private void init() {
-        this.setRegistryName(MineBackroomsCore.MODID, "noclipable_stone");
-        this.setUnlocalizedName(MineBackroomsCore.MODID + ".noclipableStone");
-        this.setCreativeTab(MineBackroomsCore.NOCLIPABLE);
-        this.setHarvestLevel("pickaxe");
-        this.setHardness(1.5F * 8);
-        this.setResistance(6F * 8);
+        this.setRegistryName(MineBackroomsCore.MODID, "level0_light");
+        this.setUnlocalizedName(MineBackroomsCore.MODID + ".level0Light");
+        this.setHarvestLevel("pickaxe", 1);
+        this.setHardness(1.5F);
+        this.setResistance(6F);
+        this.setLightLevel(15F);
         this.setSoundType(new SoundType(
                 1F,
                 1F,

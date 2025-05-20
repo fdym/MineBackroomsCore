@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "minebackroomscore:blocks/level0_bricks_side",
+    "north": "minebackroomscore:blocks/level0_bricks_side",
+    "east": "minebackroomscore:blocks/level0_bricks_side",
+    "south": "minebackroomscore:blocks/level0_bricks_side",
+    "west": "minebackroomscore:blocks/level0_bricks_side",
+    "up": "minebackroomscore:blocks/level0_bricks_up",
+    "down": "minebackroomscore:blocks/level0_bricks_down"
+  }
+}

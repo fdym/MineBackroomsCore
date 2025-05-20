@@ -32,3 +32,5 @@ itemGroup.minebackroomscoreNoclipable=MineBackrooms Core | 可切行方块
 
 tile.minebackroomscore.noclipableDirt.name=可切行泥土
 tile.minebackroomscore.noclipableStone.name=可切行石头
+tile.minebackroomscore.level0Bricks.name=Level 0 砖块
+tile.minebackroomscore.level0Light.name=Level 0 灯
