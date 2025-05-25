@@ -21,9 +21,11 @@ public class Level0Bricks extends Block {
     private void init() {
         this.setRegistryName(MineBackroomsCore.MODID, "level0_bricks");
         this.setUnlocalizedName(MineBackroomsCore.MODID + ".level0Bricks");
+        this.setCreativeTab(MineBackroomsCore.BUILDING_BLOCKS);
         this.setHarvestLevel("pickaxe", 1);
         this.setHardness(1.5F);
         this.setResistance(6F);
+        this.setLightLevel(0.25F);
         this.setSoundType(new SoundType(
                 1F,
                 1F,

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "particle": "minebackroomscore:blocks/level0_bricks_side",
-    "north": "minebackroomscore:blocks/level0_bricks_side",
-    "east": "minebackroomscore:blocks/level0_bricks_side",
-    "south": "minebackroomscore:blocks/level0_bricks_side",
-    "west": "minebackroomscore:blocks/level0_bricks_side",
+    "particle": "minebackroomscore:blocks/level0_bricks",
+    "north": "minebackroomscore:blocks/level0_bricks",
+    "east": "minebackroomscore:blocks/level0_bricks",
+    "south": "minebackroomscore:blocks/level0_bricks",
+    "west": "minebackroomscore:blocks/level0_bricks",
     "up": "minebackroomscore:blocks/level0_bricks_up",
-    "down": "minebackroomscore:blocks/level0_bricks_down"
+    "down": "minebackroomscore:blocks/level0_bricks"
   }
 }

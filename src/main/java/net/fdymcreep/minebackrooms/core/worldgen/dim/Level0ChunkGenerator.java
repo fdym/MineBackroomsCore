@@ -1,5 +1,6 @@
 package net.fdymcreep.minebackrooms.core.worldgen.dim;
 
+import mcp.MethodsReturnNonnullByDefault;
 import net.fdymcreep.minebackrooms.core.block.BlockRegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EnumCreatureType;
@@ -12,6 +13,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.IChunkGenerator;
 
 import javax.annotation.Nullable;
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.*;
 
 import static net.minecraft.init.Blocks.AIR;
@@ -38,6 +40,7 @@ public class Level0ChunkGenerator implements IChunkGenerator {
         this.random = random;
     }
 
+    @MethodsReturnNonnullByDefault
     @Override
     public Chunk generateChunk(int chunkX, int chunkZ) {
         ChunkPrimer primer = new ChunkPrimer();
@@ -151,26 +154,27 @@ public class Level0ChunkGenerator implements IChunkGenerator {
     public void populate(int i, int i1) {}
 
     @Override
-    public boolean generateStructures(Chunk chunk, int i, int i1) {
+    public boolean generateStructures(@ParametersAreNonnullByDefault Chunk chunk, int i, int i1) {
         return false;
     }
 
+    @MethodsReturnNonnullByDefault
     @Override
-    public List<Biome.SpawnListEntry> getPossibleCreatures(EnumCreatureType enumCreatureType, BlockPos blockPos) {
+    public List<Biome.SpawnListEntry> getPossibleCreatures(@ParametersAreNonnullByDefault EnumCreatureType enumCreatureType, @ParametersAreNonnullByDefault BlockPos blockPos) {
         return Collections.emptyList();
     }
 
     @Nullable
     @Override
-    public BlockPos getNearestStructurePos(World world, String s, BlockPos blockPos, boolean b) {
+    public BlockPos getNearestStructurePos(@ParametersAreNonnullByDefault World world, @ParametersAreNonnullByDefault String s, @ParametersAreNonnullByDefault BlockPos blockPos, boolean b) {
         return null;
     }
 
     @Override
-    public void recreateStructures(Chunk chunk, int i, int i1) {}
+    public void recreateStructures(@ParametersAreNonnullByDefault Chunk chunk, int i, int i1) {}
 
     @Override
-    public boolean isInsideStructure(World world, String s, BlockPos blockPos) {
+    public boolean isInsideStructure(@ParametersAreNonnullByDefault World world, @ParametersAreNonnullByDefault String s, @ParametersAreNonnullByDefault BlockPos blockPos) {
         return false;
     }
 }

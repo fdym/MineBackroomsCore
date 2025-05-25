@@ -48,7 +48,6 @@ public class  MineBackroomsTeleporter implements ITeleporter {
         if (!world.getBlockState(entity.getPosition().down()).isOpaqueCube()) {
             world.setBlockState(entity.getPosition().down(), STONE.getDefaultState());
         }
-        return;
     }
 
     protected static List<BlockPos> generateCandidates(BlockPos center, int radius) {

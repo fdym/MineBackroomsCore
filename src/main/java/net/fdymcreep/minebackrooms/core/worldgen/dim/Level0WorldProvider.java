@@ -1,15 +1,16 @@
 package net.fdymcreep.minebackrooms.core.worldgen.dim;
 
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 
-public class Level0WorldProvider extends WorldProvider {
+public abstract class Level0WorldProvider extends WorldProvider {
+    @MethodsReturnNonnullByDefault
     @Override
-    public DimensionType getDimensionType() {
-        return null;
-    }
+    public abstract DimensionType getDimensionType();
 
+    @MethodsReturnNonnullByDefault
     @Override
     public IChunkGenerator createChunkGenerator() {
         return new Level0ChunkGenerator(world);

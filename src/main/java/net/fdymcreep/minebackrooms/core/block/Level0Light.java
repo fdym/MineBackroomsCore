@@ -21,10 +21,11 @@ public class Level0Light extends Block {
     private void init() {
         this.setRegistryName(MineBackroomsCore.MODID, "level0_light");
         this.setUnlocalizedName(MineBackroomsCore.MODID + ".level0Light");
+        this.setCreativeTab(MineBackroomsCore.BUILDING_BLOCKS);
         this.setHarvestLevel("pickaxe", 1);
         this.setHardness(1.5F);
         this.setResistance(6F);
-        this.setLightLevel(15F);
+        this.setLightLevel(1F);
         this.setSoundType(new SoundType(
                 1F,
                 1F,

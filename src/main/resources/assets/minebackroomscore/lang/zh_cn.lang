@@ -29,6 +29,7 @@ gui.minebackroomscore.guiConfig.FirstLine=MineBackrooms Core 配置
 gui.minebackroomscore.guiConfig.SecondLine=Core
 
 itemGroup.minebackroomscoreNoclipable=MineBackrooms Core | 可切行方块
+itemGroup.minebackroomscoreBuildingBlocks=MineBackrooms Core | 建筑方块
 
 tile.minebackroomscore.noclipableDirt.name=可切行泥土
 tile.minebackroomscore.noclipableStone.name=可切行石头
