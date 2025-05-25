@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [{
+      "model": "minebackroomscore:level0_bricks"
+    }],
+    "inventory": [{
+      "model": "minebackroomscore:level0_bricks"
+    }]
+  }
+}

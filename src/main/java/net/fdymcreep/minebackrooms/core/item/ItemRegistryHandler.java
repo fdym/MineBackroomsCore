@@ -21,6 +21,10 @@ public class ItemRegistryHandler {
     public static final Item NOCLIPABLE_DIRT = createItemBlock(BlockRegistryHandler.NOCLIPABLE_DIRT);
     public static final Item NOCLIPABLE_STONE = createItemBlock(BlockRegistryHandler.NOCLIPABLE_STONE);
 
+    public static final Item BRICKS_ICON = createItemBlock(BlockRegistryHandler.BRICKS_ICON);
+    public static final Item LEVEL0_BRICKS = createItemBlock(BlockRegistryHandler.LEVEL0_BRICKS);
+    public static final Item LEVEL0_LIGHT = createItemBlock(BlockRegistryHandler.LEVEL0_LIGHT);
+
     public static Item createItemBlock(Block block) {
         return new ItemBlock(block).setRegistryName(block.getRegistryName());
     }
@@ -31,6 +35,10 @@ public class ItemRegistryHandler {
         registry.register(NOCLIPABLE_ICON);
         registry.register(NOCLIPABLE_DIRT);
         registry.register(NOCLIPABLE_STONE);
+
+        registry.register(BRICKS_ICON);
+        registry.register(LEVEL0_BRICKS);
+        registry.register(LEVEL0_LIGHT);
     }
 
     @SubscribeEvent
@@ -57,6 +65,31 @@ public class ItemRegistryHandler {
                 0,
                 new ModelResourceLocation(
                         BlockRegistryHandler.NOCLIPABLE_STONE.getRegistryName(),
+                        "inventory"
+                )
+        );
+
+        ModelLoader.setCustomModelResourceLocation(
+                BRICKS_ICON,
+                0,
+                new ModelResourceLocation(
+                        BlockRegistryHandler.LEVEL0_BRICKS.getRegistryName(),
+                        "inventory"
+                )
+        );
+        ModelLoader.setCustomModelResourceLocation(
+                LEVEL0_BRICKS,
+                0,
+                new ModelResourceLocation(
+                        BlockRegistryHandler.LEVEL0_BRICKS.getRegistryName(),
+                        "inventory"
+                )
+        );
+        ModelLoader.setCustomModelResourceLocation(
+                LEVEL0_LIGHT,
+                0,
+                new ModelResourceLocation(
+                        BlockRegistryHandler.LEVEL0_LIGHT.getRegistryName(),
                         "inventory"
                 )
         );

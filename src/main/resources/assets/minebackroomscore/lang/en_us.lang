@@ -29,6 +29,9 @@ gui.minebackroomscore.guiConfig.FirstLine=MineBackrooms Core Config
 gui.minebackroomscore.guiConfig.SecondLine=Core
 
 itemGroup.minebackroomscoreNoclipable=MineBackrooms Core | Noclipable
+itemGroup.minebackroomscoreBuildingBlocks=MineBackrooms Core | Bricks
 
 tile.minebackroomscore.noclipableDirt.name=Noclipable Dirt
 tile.minebackroomscore.noclipableStone.name=Noclipable Stone
+tile.minebackroomscore.level0Bricks.name=Level 0 Bricks
+tile.minebackroomscore.level0Light.name=Level 0 Light

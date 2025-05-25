@@ -1,5 +1,7 @@
 package net.fdymcreep.minebackrooms.core.worldgen.dim;
 
+import mcp.MethodsReturnNonnullByDefault;
+import net.fdymcreep.minebackrooms.core.block.BlockRegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.util.math.BlockPos;
@@ -11,9 +13,11 @@ import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.IChunkGenerator;
 
 import javax.annotation.Nullable;
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.*;
 
-import static net.minecraft.init.Blocks.*;
+import static net.minecraft.init.Blocks.AIR;
+import static net.minecraft.init.Blocks.BEDROCK;
 
 public class Level0ChunkGenerator implements IChunkGenerator {
     protected final World world;
@@ -23,9 +27,8 @@ public class Level0ChunkGenerator implements IChunkGenerator {
     public static final int DOOR = 1;
     public static final int WALL = 2;
 
-    // override!!
-    protected static final Block BRICK = STONE;
-    protected static final Block LIGHT = GLOWSTONE;
+    protected static final Block BRICKS = BlockRegistryHandler.LEVEL0_BRICKS;
+    protected static final Block LIGHT = BlockRegistryHandler.LEVEL0_LIGHT;
 
     public Level0ChunkGenerator(World world) {
         this.world = world;
@@ -37,6 +40,7 @@ public class Level0ChunkGenerator implements IChunkGenerator {
         this.random = random;
     }
 
+    @MethodsReturnNonnullByDefault
     @Override
     public Chunk generateChunk(int chunkX, int chunkZ) {
         ChunkPrimer primer = new ChunkPrimer();
@@ -46,12 +50,12 @@ public class Level0ChunkGenerator implements IChunkGenerator {
                 primer.setBlockState(x, 0, z, BEDROCK.getDefaultState());
 
                 for (int y = 1; y < 5; y++) {
-                    primer.setBlockState(x, y, z, BRICK.getDefaultState());
+                    primer.setBlockState(x, y, z, BRICKS.getDefaultState());
                 }
 
                 for (int y = 5; y < 9; y++) {
                     if (Arrays.asList(0, 7, 8, 15).contains(x) && Arrays.asList(0, 7, 8, 15).contains(y)) {
-                        primer.setBlockState(x, y, z, BRICK.getDefaultState());
+                        primer.setBlockState(x, y, z, BRICKS.getDefaultState());
                     }
                 }
 
@@ -59,7 +63,7 @@ public class Level0ChunkGenerator implements IChunkGenerator {
                     if (((x + 4) % 8 <= 1) && ((z + 4) % 8 <= 0) && (y == 9)) {
                         primer.setBlockState(x, y, z, LIGHT.getDefaultState());
                     } else {
-                        primer.setBlockState(x, y, z, BRICK.getDefaultState());
+                        primer.setBlockState(x, y, z, BRICKS.getDefaultState());
                     }
                 }
                 primer.setBlockState(x, 14, z, BEDROCK.getDefaultState());
@@ -133,11 +137,11 @@ public class Level0ChunkGenerator implements IChunkGenerator {
         BlockPos pos = originPos.add(POS_OFFSET[facing]);
         for (int i = 0; i < 6; i++) {
             if (((i == 2) || (i == 3)) && wallType == DOOR) {
-                origin.setBlockState(pos.getX(), pos.up(3).getY(), pos.getZ(), BRICK.getDefaultState());
+                origin.setBlockState(pos.getX(), pos.up(3).getY(), pos.getZ(), BRICKS.getDefaultState());
             } else {
                 for (int y = 0; y < 4; y++) {
                     origin.setBlockState(
-                            pos.getX(), pos.up(y).getY(), pos.getZ(), BRICK.getDefaultState()
+                            pos.getX(), pos.up(y).getY(), pos.getZ(), BRICKS.getDefaultState()
                     );
                 }
             }
@@ -150,26 +154,27 @@ public class Level0ChunkGenerator implements IChunkGenerator {
     public void populate(int i, int i1) {}
 
     @Override
-    public boolean generateStructures(Chunk chunk, int i, int i1) {
+    public boolean generateStructures(@ParametersAreNonnullByDefault Chunk chunk, int i, int i1) {
         return false;
     }
 
+    @MethodsReturnNonnullByDefault
     @Override
-    public List<Biome.SpawnListEntry> getPossibleCreatures(EnumCreatureType enumCreatureType, BlockPos blockPos) {
+    public List<Biome.SpawnListEntry> getPossibleCreatures(@ParametersAreNonnullByDefault EnumCreatureType enumCreatureType, @ParametersAreNonnullByDefault BlockPos blockPos) {
         return Collections.emptyList();
     }
 
     @Nullable
     @Override
-    public BlockPos getNearestStructurePos(World world, String s, BlockPos blockPos, boolean b) {
+    public BlockPos getNearestStructurePos(@ParametersAreNonnullByDefault World world, @ParametersAreNonnullByDefault String s, @ParametersAreNonnullByDefault BlockPos blockPos, boolean b) {
         return null;
     }
 
     @Override
-    public void recreateStructures(Chunk chunk, int i, int i1) {}
+    public void recreateStructures(@ParametersAreNonnullByDefault Chunk chunk, int i, int i1) {}
 
     @Override
-    public boolean isInsideStructure(World world, String s, BlockPos blockPos) {
+    public boolean isInsideStructure(@ParametersAreNonnullByDefault World world, @ParametersAreNonnullByDefault String s, @ParametersAreNonnullByDefault BlockPos blockPos) {
         return false;
     }
 }
